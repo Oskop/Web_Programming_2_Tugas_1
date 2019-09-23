@@ -27,7 +27,7 @@ $users = mysqli_query($connection, "SELECT * FROM users ORDER BY id");
     <div class="container">
       <div class="row">
         <div class="col-2 mt-4">
-          <a href="adduser.php" class="btn btn-primary">Tambah User</a>
+          <a href="formuser.php" class="btn btn-primary">Tambah User</a>
         </div>
       </div>
     </div>
@@ -54,7 +54,7 @@ $users = mysqli_query($connection, "SELECT * FROM users ORDER BY id");
                   <td><?=$data['password'];?></td>
                   <td><?=$data['email'];?></td>
                   <td>
-                    <a href="<?="adduser.php?id=".$data['id'];?>"
+                    <a href="<?="formuser.php?id=".$data['id'];?>"
                       class="btn btn-primary">Edit</a>
                     <a href="<?="delete.php?id=".$data['id'];?>"
                       onclick="return confirm('Yakin ingin menghapus user ini?');"
