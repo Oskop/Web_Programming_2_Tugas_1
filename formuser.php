@@ -55,11 +55,11 @@
           // End of Update Logic
 
           if ($connection->query($query) === TRUE) {
-            echo "<div class=\"alert alert-success\" role=\"alert\">Berhasil Disimpan! Kembali ke Daftar User dalam 5 detik</div>";
+            echo "<div class=\"alert alert-success\" role=\"alert\">Berhasil Disimpan! Kembali ke Daftar User dalam beberapa detik</div>";
             echo "<script>var time = setTimeout(function()
                   {window.location = 'index.php'}, 3000);</script>";
           } else {
-            echo "<div class=\"alert alert-danger\" role=\"alert\">Gagal Disimpan! Kembali ke Daftar User dalam 5 detik</div>";
+            echo "<div class=\"alert alert-danger\" role=\"alert\">Gagal Disimpan! Kembali ke Daftar User dalam beberapa detik</div>";
             echo "<script>var time = setTimeout(function()
                   {window.location = 'index.php'}, 3000);</script>";
             echo mysqli_errno($connection).' '.mysqli_error($connection);
