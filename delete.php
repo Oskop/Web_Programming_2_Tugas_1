@@ -9,6 +9,7 @@
     <title>Hapus User</title>
   </head>
   <body>
+    <center>
     <?php
     require_once 'connection.php';
 
@@ -23,5 +24,6 @@
       {window.location = 'index.php'}, 1);</script>";
     }
     ?>
+  </center>
   </body>
 </html>
